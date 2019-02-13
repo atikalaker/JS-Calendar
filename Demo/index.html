@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calender</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/calendar.min.css">
+    </head>
+    <body>
+        <div id="pcal"></div>
+        <div id="hcal"></div>
+        <div id="gcal"></div>
+        
+        <script src="./plugins/XDate.js"></script>
+        <script src="./plugins/calendar.js"></script>
+
+        <script>
+            Calendar({
+                elem: document.querySelector("#pcal"),
+
+                primaryContext: "persian",
+                secondaryContext: "gregorian",
+                tertiaryContext: "hijri",
+
+                weekDayFormat: "short",
+
+                lang: "fa",
+
+                onselect: function(date) {
+                    alert(`${date.year}/${date.month}/${date.day}`);
+                }
+            });
+
+            Calendar({
+                elem: document.querySelector("#hcal"),
+
+                primaryContext: "hijri",
+                secondaryContext: "gregorian",
+
+                weekDayFormat: "short",
+
+                lang: "ar",
+
+                onselect: function(date) {
+                    alert(`${date.year}/${date.month}/${date.day}`);
+                }
+            });
+
+            Calendar({
+                elem: document.querySelector("#gcal"),
+
+                primaryContext: "gregorian",
+
+                weekDayFormat: "short",
+
+                lang: "en",
+
+                onselect: function(date) {
+                    alert(`${date.year}/${date.month}/${date.day}`);
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+@font-face {
+	src:url("../fonts/IRANSansWeb.ttf");
+	font-family:iransans
+}
+
+body {
+	margin:0;
+	padding:0;
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	flex-wrap:wrap;
+	padding-top:100px;
+	font-family:iransans;
+	background-color:#3a3848
+}
