@@ -23,7 +23,7 @@ So your HTML will be something like this.
 ```
 
 Now we are ready to dive into the library usage. You will have a function named **Calendar** that you should give it some options to do the job.
-Here is how you can use it.
+Here is how you can use it:
 
 ```javascript
 Calendar({
