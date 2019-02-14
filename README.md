@@ -7,18 +7,18 @@ So your HTML will be something like this.
 
 ```HTML
 <head>
-   ...
-   <link rel="stylesheet" type="text/css" href="calendar.min.css">
+    ...
+    <link rel="stylesheet" type="text/css" href="calendar.min.css">
 </head>
 <body>
-   ...
-   <div id="calendar"><div>
-   ...
-   <script type="text/javascript" src="XDate.js"></script>
-   <script type="text/javascript" src="calendar.js"></script>
-   <script type="text/javascript">
-      // USAGE SCRIPT GOES HERE
-   </script>
+    ...
+    <div id="calendar"><div>
+    ...
+    <script type="text/javascript" src="XDate.js"></script>
+    <script type="text/javascript" src="calendar.js"></script>
+    <script type="text/javascript">
+        // USAGE SCRIPT GOES HERE
+    </script>
 </body>
 ```
 
@@ -27,19 +27,19 @@ Here is how you can use it.
 
 ```javascript
 Calendar({
-   elem: document.querySelector("#calendar"),
+    elem: document.querySelector("#calendar"),
 
-   primaryContext: "persian",
-   secondaryContext: "gregorian",
-   tertiaryContext: "hijri",
+    primaryContext: "persian",
+    secondaryContext: "gregorian",
+    tertiaryContext: "hijri",
 
-   weekDayFormat: "short",
+    weekDayFormat: "short",
 
-   lang: "fa",
+    lang: "fa",
 
-   onselect: function(date) {
-      alert(`${date.year}/${date.month}/${date.day}`);
-   }
+    onselect: function(date) {
+        alert(`${date.year}/${date.month}/${date.day}`);
+    }
 });
 ```
 ## Calendar Options
@@ -76,8 +76,8 @@ This last parameter is a callback function to handle date selected by your user.
 
 ```javascript
 {
-   year: 2019,
-   month: 2,
-   day: 14
+    year: 2019,
+    month: 2,
+    day: 14
 }
 ```
