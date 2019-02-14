@@ -65,7 +65,9 @@ In the calendar header we always show week day names. Using this parameter you c
 - short
 
 **full** format will show week days like: Saturday, Sunday, etc...
+
 **abbr** format will show the abbreviation of the week day like: Sat, Sun, etc...
+
 **short** format will show a single letter for each week day like: S, S, M, T, etc...
 
 #### lang *[Optional]*
