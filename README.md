@@ -43,24 +43,21 @@ Calendar({
 });
 ```
 ## Calendar Options
-### elem
-#### [Required]
+#### elem *[Required]*
 This parameter will be the element that you want to create the calendar inside it. So you need to pass a DOMNode to this one
 
-### primaryContext *[Required]*
-##### [Required]
+#### primaryContext *[Required]*
 This is the primary context of the calendar. This will specify the calendar that you want to create. There are 3 available context by now as you can see below. The context value can be one of these:
 
 - gregorian
 - persian
 - hijri
 
-### secondaryContext *[Optional]*
-###### [Required]
-### tertiaryContext *[Optional]*
+#### secondaryContext *[Optional]*
+#### tertiaryContext *[Optional]*
 You can add two more calendar context next to the primary context as *secondaryContext* and *tertiaryContext*. Their values can be one of the values in the above list. This will show the corresponding dates of each day of the primary calendar context.
 
-### weekDayFormat *[Optional]*
+#### weekDayFormat *[Optional]*
 In the calendar header we always show week day names. Using this parameter you can specify how you want them to be displayed. There are 3 available formats that you can use for this purpose:
 
 - full
@@ -71,10 +68,10 @@ In the calendar header we always show week day names. Using this parameter you c
 **abbr** format will show the abbreviation of the week day like: Sat, Sun, etc...
 **short** format will show a single letter for each week day like: S, S, M, T, etc...
 
-### lang *[Optional]*
+#### lang *[Optional]*
 Using this parameter you can change the language for global texts, like button titles, ...
 
-### onselect *[Optional]*
+#### onselect *[Optional]*
 This last parameter is a callback function to handle date selected by your user. This will return a date object containing 3 values:
 
 ```javascript
