@@ -43,10 +43,12 @@ Calendar({
 });
 ```
 ## Calendar Options
-### elem *[Required]*
+### elem
+#### [Required]
 This parameter will be the element that you want to create the calendar inside it. So you need to pass a DOMNode to this one
 
 ### primaryContext *[Required]*
+##### [Required]
 This is the primary context of the calendar. This will specify the calendar that you want to create. There are 3 available context by now as you can see below. The context value can be one of these:
 
 - gregorian
@@ -54,6 +56,7 @@ This is the primary context of the calendar. This will specify the calendar that
 - hijri
 
 ### secondaryContext *[Optional]*
+###### [Required]
 ### tertiaryContext *[Optional]*
 You can add two more calendar context next to the primary context as *secondaryContext* and *tertiaryContext*. Their values can be one of the values in the above list. This will show the corresponding dates of each day of the primary calendar context.
 
